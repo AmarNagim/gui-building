@@ -83,34 +83,34 @@ def main():
         question5Answer = question5Var.get()
         question6Answer = question6Var.get()
         
-        if question1Answer == 'True' and question2Answer == 'True' and question3Answer == 'True':
-            print('Emmenthaler')
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Emmenthaler')
-        elif question1Answer == 'True' and question2Answer == 'True' and question3Answer == 'False':
-            print('Leerdammer')
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Leerdammer')
-        elif question1Answer == 'True' and question2Answer == 'False' and question5Answer == 'True':
-            print('Pamigiano Reggiano')
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Pamigiano Reggiano')
-        elif question1Answer == 'True' and question2Answer == 'False' and question5Answer == 'False':
-            print('Goudse kaas')     
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Goudse kaas')
-        elif question1Answer == 'False' and question4Answer == 'True' and question6Answer == 'True':
-            print('Bleu de Rochbaron') 
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Bleu de Rochbaron')
-        elif question1Answer == 'False' and question4Answer == 'True' and question6Answer == 'False':
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Foume d\'Ambert')
-            print('Foume d\'Ambert')    
-        elif question1Answer == 'False' and question4Answer == 'False' and question6Answer == 'True':
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Camembert')
-            print('Camembert')  
-        elif question1Answer == 'False' and question4Answer == 'False' and question6Answer == 'True':
-            cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Mozzarella')
-            print('Mozzarella')    
-        else:
-            cheeseGuess = messagebox.showerror('ERROR', f'Helaas wist ik de kaas in gedachten niet te raden :(')
-        if cheeseGuess:
-            window.destroy()
+        # if question1Answer == 'True' and question2Answer == 'True' and question3Answer == 'True':
+        #     print('Emmenthaler')
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Emmenthaler')
+        # elif question1Answer == 'True' and question2Answer == 'True' and question3Answer == 'False':
+        #     print('Leerdammer')
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Leerdammer')
+        # elif question1Answer == 'True' and question2Answer == 'False' and question5Answer == 'True':
+        #     print('Pamigiano Reggiano')
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Pamigiano Reggiano')
+        # elif question1Answer == 'True' and question2Answer == 'False' and question5Answer == 'False':
+        #     print('Goudse kaas')     
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Goudse kaas')
+        # elif question1Answer == 'False' and question4Answer == 'True' and question6Answer == 'True':
+        #     print('Bleu de Rochbaron') 
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Bleu de Rochbaron')
+        # elif question1Answer == 'False' and question4Answer == 'True' and question6Answer == 'False':
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Foume d\'Ambert')
+        #     print('Foume d\'Ambert')    
+        # elif question1Answer == 'False' and question4Answer == 'False' and question6Answer == 'True':
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Camembert')
+        #     print('Camembert')  
+        # elif question1Answer == 'False' and question4Answer == 'False' and question6Answer == 'True':
+        #     cheeseGuess = messagebox.showinfo(None, f'De kaas die je in gedachten hebt is Mozzarella')
+        #     print('Mozzarella')    
+        # else:
+        #     cheeseGuess = messagebox.showerror('ERROR', f'Helaas wist ik de kaas in gedachten niet te raden :(')
+        # if cheeseGuess:
+            # window.destroy()
     button = Button(window, text="test", command=buttonFunction)
     button.pack()
 
